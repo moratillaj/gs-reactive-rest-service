@@ -1,0 +1,11 @@
+cpu usage
+http://localhost:9090/graph?g0.range_input=1h&g0.end_input=2019-08-18%2013%3A52&g0.moment_input=2019-08-18%2012%3A52%3A24&g0.expr=sum(process_cpu_usage)%20by%20(job)&g0.tab=0
+
+http request seconds
+http://localhost:9090/graph?g0.range_input=1h&g0.end_input=2019-08-18%2013%3A24&g0.expr=http_server_requests_seconds_sum%7Buri%3D%22%2Fhello%22%7D&g0.tab=0
+
+loaded classes
+http://localhost:9090/graph?g0.range_input=1h&g0.end_input=2019-08-18%2013%3A55&g0.moment_input=2019-08-18%2012%3A55%3A57&g0.expr=jvm_classes_loaded&g0.tab=0
+
+memory usage
+http://localhost:9090/graph?g0.range_input=1h&g0.end_input=2019-08-18%2013%3A57&g0.expr=sum(jvm_memory_used_bytes)%20by%20(job)&g0.tab=0
